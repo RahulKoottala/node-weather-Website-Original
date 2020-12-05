@@ -54,3 +54,11 @@ button {
     color: white;
     padding: 8px;
 }
+
+#message-1 {
+    display: ruby-base-container;
+}
+
+#weather-icon {
+    float: right;
+}

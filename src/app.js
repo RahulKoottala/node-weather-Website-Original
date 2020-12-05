@@ -63,7 +63,9 @@ app.get('/weather', (req, res) => {
                 place,
                 'currentWeather': forecastData.currentWeather,
                 'temperature': forecastData.temperature,
-                'feelsLike': forecastData.feelsLike
+                'feelsLike': forecastData.feelsLike,
+                'humidity': forecastData.humidity,
+                'icon' : forecastData.icon
             })
         })     
     })
