@@ -9,6 +9,10 @@ const port = process.env.PORT || 3000
 
 //Define paths for express config
 const publicDirectory = path.join(__dirname,'../public')
+const bootstrapCSSDirectory = path.join(__dirname,'../node_modules/bootstrap/dist/css')
+const bootstrapJSDirectory = path.join(__dirname,'../node_modules/bootstrap/dist/js')
+const jqueryDirectory = path.join(__dirname,'../node_modules/jquery/dist')
+
 //This is to change the views name to template
 const viewsPath = path.join(__dirname,'../templates/views')
 const partialsPath = path.join(__dirname,'../templates/partials')
@@ -20,6 +24,9 @@ hbs.registerPartials(partialsPath)
 
 //Setup - serving all the static conetnt
 app.use(express.static(publicDirectory))
+app.use('/css', express.static(bootstrapCSSDirectory))
+app.use('/js', express.static(bootstrapJSDirectory))
+app.use('/js', express.static(jqueryDirectory))
 
 app.get('', (req,res) => {
     //match up with the handlebar filename
