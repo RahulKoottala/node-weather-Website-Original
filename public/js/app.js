@@ -13,6 +13,8 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading weather data ...'
     messageTwo.textContent = ''
     weatherIcon.setAttribute("src",'')
+    weatherIcon.style.display = 'none'
+
 
         fetch('/weather?address=' + encodeURIComponent(location)).then((response) => {
         response.json().then((data) => {
@@ -23,6 +25,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = 'Location: ' +data.place
                 messageTwo.append(document.createElement("br"))
                 weatherIcon.setAttribute("src",data.icon)
+                weatherIcon.style.display = 'block'
                 messageTwo.textContent = 'Current Weather: ' +data.currentWeather 
                 messageTwo.append(document.createElement("br"))
                 messageTwo.append('Temperature: ' ,data.temperature)

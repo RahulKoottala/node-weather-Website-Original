@@ -53,13 +53,18 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
-}
+    margin: 0px 10px;
+} 
 
 #message-1 {
     display: ruby-base-container;
+    font-size: larger;
 }
 
 #weather-icon {
     float: right;
     margin-right: 260px;
+    height: 150px;
+    width: 150px;
+    display: none;
 }
