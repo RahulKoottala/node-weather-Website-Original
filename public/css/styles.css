@@ -97,3 +97,13 @@ button {
 .text-color {
     color: black;
 }
+
+#logo-header {
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-right: 25px;
+}
+
+#title-header {
+    display: inline-block;
+}

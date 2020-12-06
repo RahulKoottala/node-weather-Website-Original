@@ -31,7 +31,7 @@ app.use('/js', express.static(jqueryDirectory))
 app.get('', (req,res) => {
     //match up with the handlebar filename
     res.render('index', {
-        title: 'Weather App',
+        title: 'Weather Web',
         name: 'Rahul'
     })
 })
