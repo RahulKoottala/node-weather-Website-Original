@@ -1,7 +1,7 @@
 body {
     color: #333333;
     font-family: Arial;
-    max-width: 650px;
+    /* max-width: 650px; */
     margin: 0 auto;
     padding: 0 16px;
 
@@ -71,4 +71,24 @@ button {
 
 #custom-card {
     width: max-content;
+}
+
+.back {
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+.nav-color{
+    padding: 10px 0;
+}
+
+.nav-color a:hover{
+/*         background-color: #ddd;
+        color: black; */
+        background-color: black;
+        color: #eeeeee;
+        border-radius: 5px;
+}
+.text-color {
+    color: black;
 }
