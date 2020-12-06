@@ -19,14 +19,22 @@ weatherForm.addEventListener('submit', (e) => {
         fetch('/weather?address=' + encodeURIComponent(location)).then((response) => {
         response.json().then((data) => {
             if(data.error) {
+                messageOne.classList.add("alert")
+                messageOne.classList.add("alert-danger")
                 messageOne.textContent = data.error
                 messageTwo.textContent = ' '
             } else {
                 //messageOne.style.word-wrap='break-word'
+                messageOne.classList.add("alert")
+                messageOne.classList.add("alert-success")
+                messageOne.classList.add("alert-heading")
                 messageOne.textContent = 'Location: ' +data.place
+                messageTwo.classList.add("alert")
+                messageTwo.classList.add("alert-success")
                 messageTwo.append(document.createElement("br"))
                 weatherIcon.setAttribute("src",data.icon)
                 weatherIcon.style.display = 'block'
+                messageOne.style.display = 'block'
                 messageTwo.textContent = 'Current Weather: ' +data.currentWeather 
                 messageTwo.append(document.createElement("br"))
                 messageTwo.append('Temperature: ' ,data.temperature)

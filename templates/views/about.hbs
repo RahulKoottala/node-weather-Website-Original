@@ -2,15 +2,24 @@
 <html>
     <head>
         <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="/images/weather.png">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link href="/css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <div class="main-content">
+        <div class=" container main-content text-center">
             {{>header}}
-            <p>This site was created by Rahul. It uses data from mapbox.com and weathersky.com!!</p>
-            <img class= "portrait" src="/images/me.jpg">
-        </div>
+            <img class= "img-fluid portrait" src="/images/me.jpg">
+            <hr>
+            <blockquote class="blockquote text-center">
+                <p class="mb-0 display-4">It uses data from mapbox.com and weathersky.com!!</p>
+                <p class="blockquote-footer">This site was created by <cite title="Source Title">Rahul.</cite></p>
+            </blockquote>
         {{>footer}}
+        </div>
+
+        <script src="/js/jquery.min.js"></script>  
+        <script src="/js/bootstrap.min.js"></script>       
     </body>
 </html>
