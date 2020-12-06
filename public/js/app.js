@@ -23,7 +23,6 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.classList.add("alert-danger")
                 messageOne.textContent = data.error
                 messageTwo.textContent = ' '
-                messageTwo.classList.add("")
             } else {
                 //messageOne.style.word-wrap='break-word'
                 messageOne.classList.add("alert")
