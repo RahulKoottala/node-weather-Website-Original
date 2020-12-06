@@ -10,9 +10,9 @@ body {
     min-height: 100vh;
 }
 
-.main-content {
+/* .main-content {
     flex-grow: 1;
-}
+} */
 
 footer {
     color: #888888;
@@ -59,6 +59,11 @@ button {
 #message-1 {
     display: ruby-base-container;
     font-size: larger;
+    display: inline;
+}
+
+#message-2 {
+    word-wrap: break-word;
 }
 
 #weather-icon {
@@ -89,6 +94,7 @@ button {
         color: #eeeeee;
         border-radius: 5px;
 }
+
 .text-color {
     color: black;
 }

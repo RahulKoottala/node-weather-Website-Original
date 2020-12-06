@@ -22,6 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error
                 messageTwo.textContent = ' '
             } else {
+                //messageOne.style.word-wrap='break-word'
                 messageOne.textContent = 'Location: ' +data.place
                 messageTwo.append(document.createElement("br"))
                 weatherIcon.setAttribute("src",data.icon)
