@@ -68,3 +68,7 @@ button {
     width: 150px;
     display: none;
 }
+
+#custom-card {
+    width: max-content;
+}
